@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    }
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    }
+
+  
+    .header {
+    padding: 80px;
+    text-align: center;
+    background-image: url("https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2020/04/7-Elements-of-Interior-Designing-Cover-23-04.jpg");
+    color: white;
+    }
+
+    .header h1 {
+    font-size: 40px;
+    }
+    .navbar {
+    overflow: hidden;
+    background-color: #333;
+    }
+    .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    }
+    .navbar a.right {
+    float: right;
+    }
+    .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+    .row {  
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    }
+    /* Main column */
+    .main {   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    }
+    .smallimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    }
+    a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+    }
+    a:visited {
+    color: rgb(188, 184, 184);
+    background-color: transparent;
+    text-decoration: none;
+    }
+    a:hover {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+    }
+    a:active {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+    }
+
+    @media screen and (max-width: 700px) {
+    .row {   
+    flex-direction: column;
+    }
+    }
+
+    @media screen and (max-width: 400px) {
+    .navbar a {
+    float: none;
+    width:100%;
+    }
+    }
+
+    .footer {
+    padding: 10px;
+    text-align: center;
+    background: #333;}
